@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="C:\Users\kishvs\Desktop\Module 2\M2 Programs\CSS\form.css"/>
+        <script type="text/javascript" src="C:\Users\kishvs\Desktop\Module 2\M2 Programs\JS\validate.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js></script>
+     
+    </head>
+    <body class="form_1">
+            <center><h1>Register</h1></center>
+            <center><b>Please fill in this form to create an account<b></center><br>
+            <form name="mail_registration" action="login.html" onsubmit="return final()" autocomplete="off">
+                <div class="container">
+                    <div class="row">
+                        <div class=col-2>User Name </div>
+                        <div class=col-2><input id="uname" type="text" placeholder="Enter username" required onkeyup="namecheck()"></div>
+                        <div class=col-2><p id="un"></p></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Name </div>
+                        <div class=col-2><input id="name" type="text" placeholder="Enter name"  required onkeyup="validatename()"></div>
+                        <div class=col-2><p id="n"></p></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Email </div>
+                        <div class=col-2><input id="email" type="email" placeholder="Enter Email" autocomplete="off" required onkeyup="mailcheck()"></div>
+                        <div class=col-2><p id="en"></p></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Password</div>
+                        <div class=col-2><input id="pass" type="password" placeholder="Enter password"required onkeyup="passcheck()"></div>
+                        <div class=col-2><p id="p"></p></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Repeat Password</div>
+                        <div class=col-2><input id="repass" type="password" placeholder="Repeat Password"  required onkeyup="passvalidate()"></div>
+                        <div class=col-2><p id="rep"></p></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>DOB</div>
+                        <div class=col-2><input id="dof" type="date" required oninput="dval()"></div>
+                        <div class=col-2><p id="db"></p></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Gender</div>
+                        <div class=col-2><input type="radio" name="gender" value="male" checked>Male<br><input type="radio" name="gender" value="female">Female<br><input type="radio" name="gender" value="other">Other</div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Languages Known</div>
+                        <div class=col-6><input type="checkbox" name="language" value="english" >English &emsp;<input type="checkbox" name="language1" value="hindi">Hindi &emsp;<input type="checkbox" name="language3" value="tamil">Tamil &emsp;<input type="checkbox" name="language4" value="telugu">Telugu</div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Contact Number</div>
+                        <div class=col-2><input id="num" type="number" placeholder="+91" required onkeyup="numcheck()"></div>
+                        <div class=col-2><p id="numb"></p></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Upload</div>
+                        <div class=col-2><input type="file" name="upload" value="file"></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Favourite Color</div>
+                        <div class=col-2><input type="color" name="color"></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Download File</div>
+                        <div class=col-2><button><a href="C:\Users\kishvs\Desktop\OCJP Material\scjp.pdf">Download PDF File</a></button></div>
+                    </div><br>
+                    <div class="row">
+                        <div class=col-2>Qualification</div>
+                        <div class=col-2><select name="degree"><option value="degree" name="degree">Degree</option><option value="B.Tech" name="degree1">B.Tech</option><option value="M.Tech" name="degree2">M.Tech</option></select></div>
+                    </div><br>
+                    <p style="color:red"><input type="checkbox" name="accept" value="accept" required>I agree to the given Terms and Conditions</p>
+                    <div class="row">
+                        <div class=col-4><input type="submit" value="Register"></div>
+                        <div><input type="reset" value="Clear"></div>
+                    </div><br>
+                    </div>
+            </form>
+        </body>
+</html>
